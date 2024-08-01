@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: #323238;
+  --gray: #e1e1e6;
+  --blue: #02799d;
+  --white: #fff;
+
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--text-color);
+  display: grid;
+  height: 100vh;
+  place-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.sr-only {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  padding: 0px;
+  border: 0;
+  appearance: none;
+}
+
+main {
+  display: flex;
+  gap: 192px;
+  align-items: center;
+}
+
+#timer-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+}
+
+#timer {
+  font-size: 12.6rem;
+  font-weight: 500;
+  display: flex;
+  gap: 4px;
+}
+
+#controls {
+  display: flex;
+  gap: 40px;
+}
+
+#controls button {
+  background-color: transparent;
+  border: 0;
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 4.8rem;
+}
+
+#btns-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+}
+
+#btns-wrapper button {
+  background-color: var(--gray);
+  border: 0;
+  border-radius: 2.4rem;
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 5.6rem;
+  width: 13.8rem;
+  height: 15.2rem;
+  transition: all ease 0.2s;
+}
+
+.forest-playing #btns-wrapper button:nth-child(1),
+.rain-playing #btns-wrapper button:nth-child(2),
+.cafe-playing #btns-wrapper button:nth-child(3),
+.fire-playing #btns-wrapper button:nth-child(4) {
+  background-color: var(--blue);
+  color: var(--white);
+}

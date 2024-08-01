@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus Timer</title>
+
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-svg" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./src/main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div id="timer-wrapper">
+        <div id="timer">
+          <span id="minutes">25</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+        </div>
+        <div id="controls">
+          <button data-action="play" class="ph ph-play-circle">
+            <span class="sr-only">Iniciar contador</span>
+          </button>
+          <button data-action="stop" class="ph ph-stop-circle">
+            <span class="sr-only">Pausar contador</span>
+          </button>
+          <button data-action="increase" class="ph ph-plus-circle">
+            <span class="sr-only">Aumentar em 5 minutos</span>
+          </button>
+          <button data-action="decrease" class="ph ph-minus-circle">
+            <span class="sr-only">Diminuir em 5 minutos</span>
+          </button>
+        </div>
+      </div>
+
+      <div id="btns-wrapper">
+        <button data-action="toggleForest" class="ph ph-tree">
+          <span class="sr-only">Diminuir em 5 minutos</span>
+        </button>
+        <button data-action="toggleRain" class="ph ph-cloud-rain">
+          <span class="sr-only">Diminuir em 5 minutos</span>
+        </button>
+        <button data-action="toggleCafeteria" class="ph ph-storefront">
+          <span class="sr-only">Diminuir em 5 minutos</span>
+        </button>
+        <button data-action="toggleFire" class="ph ph-fire">
+          <span class="sr-only">Diminuir em 5 minutos</span>
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
